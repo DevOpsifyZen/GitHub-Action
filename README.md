@@ -103,6 +103,11 @@ name: Build and Deploy to EC2
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'index.js'
+      - 'package.json'
+      - 'Dockerfile'
+      - '.github/workflows/deploy.yml'
 
 jobs:
   deploy:
